@@ -23,11 +23,9 @@ jobs:
     - run: npm ci
     - run: npm run build
     - name: Archive production artifacts
-      uses: actions/upload-pages-artifact@v1
+      uses: actions/upload-pages-artifact@v3
       with:
-        name: github-pages
-        path: |
-          dist/ryo-kam/browser
+        path: dist/ryo-kam/browser
           
     
   deploy:
