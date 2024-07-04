@@ -1,5 +1,12 @@
-<div class="flex-col gap-4">
-  <h1>{{ title }}</h1>
-  <p>{{ date }}</p>
-  <ng-content></ng-content>
+<div class="flex-col gap-4 bg-gray-600 min-w-80 hover:border-2">
+  <div class="flex-row gap-4 align-middle justify-between m-4">
+    <h1>{{ cardInput.heading }}</h1>
+    @if (cardInput.icon) {
+    <img [src]="cardInput.icon" />
+    }
+  </div>
+  <p>{{ cardInput.description }}</p>
+  @if (cardInput.footer) {
+  <p>{{ cardInput.footer }}</p>
+  }
 </div>

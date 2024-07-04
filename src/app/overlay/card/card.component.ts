@@ -1,5 +1,12 @@
 import { Component, Input } from '@angular/core';
 
+export type CardInput = {
+  heading: string;
+  description: string;
+  icon?: string;
+  footer?: string;
+};
+
 @Component({
   selector: 'app-card',
   standalone: true,
@@ -8,7 +15,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './card.component.css',
 })
 export class CardComponent {
-  @Input({ required: true }) title: string = '';
-  @Input() date: string = '';
-  @Input() link: string = '';
+  @Input({ required: true }) cardInput!: CardInput;
 }

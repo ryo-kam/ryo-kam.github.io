@@ -1,5 +1,13 @@
-import { Component } from '@angular/core';
-import { CardComponent } from './card/card.component';
+import { Component, Input } from '@angular/core';
+import { CardComponent, CardInput } from './card/card.component';
+
+export type OverlayInput = {
+  title: string;
+  position: string;
+  startDate: string;
+  endDate?: string;
+  cardInputs: Array<CardInput>;
+};
 
 @Component({
   selector: 'app-overlay',
@@ -9,20 +17,5 @@ import { CardComponent } from './card/card.component';
   styleUrl: './overlay.component.css',
 })
 export class OverlayComponent {
-  toList = (items: Array<string>) => {
-    return '<ul>' + items.map((item) => `<li>${item}</li>`) + '</ul>';
-  };
-
-  items = [
-    {
-      name: 'Thred',
-      date: 'Nov 2023 - Jul 2024',
-      summary: this.toList(['Hi', 'Hello']),
-    },
-    {
-      name: 'EscapeHQ',
-      date: 'Feb 2023 - Apr 2024',
-      summary: this.toList(['Hi', 'Hello']),
-    },
-  ];
+  @Input({ required: true }) overlayInput!: OverlayInput;
 }

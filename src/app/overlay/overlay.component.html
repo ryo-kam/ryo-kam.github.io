@@ -1,7 +1,11 @@
-@for (item of items; track item.name) {
-<app-card
-  [title]="item.name"
-  [date]="item.date"
-  [innerHTML]="item.summary"
-></app-card>
-}
+<div>
+  <div>
+    <h1>{{ overlayInput.title }}</h1>
+    <h2>{{ overlayInput.position }}</h2>
+    <h2>{{ overlayInput.startDate }} - {{ overlayInput.endDate }}</h2>
+  </div>
+
+  @for (cardInput of overlayInput.cardInputs; track cardInput.heading) {
+  <app-card [cardInput]="cardInput"></app-card>
+  }
+</div>
