@@ -1,1 +1,7 @@
-<p>overlay works!</p>
+@for (item of items; track item.name) {
+<app-card
+  [title]="item.name"
+  [date]="item.date"
+  [innerHTML]="item.summary"
+></app-card>
+}
