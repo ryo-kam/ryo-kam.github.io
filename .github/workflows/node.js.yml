@@ -27,7 +27,7 @@ jobs:
       with:
         name: github-pages
         path: |
-          dist/browser
+          dist/ryo-kam/browser
           
     
   deploy:
