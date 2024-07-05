@@ -1,7 +1,5 @@
 # Ryo Kamata
 
-Hello
-
 [CLICK](https://ryo-kam.github.io/)
 
 ---
