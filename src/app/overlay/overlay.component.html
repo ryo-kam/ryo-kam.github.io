@@ -1,11 +1,22 @@
-<div>
-  <div>
-    <h1>{{ overlayInput.title }}</h1>
-    <h2>{{ overlayInput.position }}</h2>
+<div class="flex flex-col gap-2">
+  <div
+    class="text-3xl font-bold text-[#333333] max-w-screen-xl w-full lg:mx-auto px-8"
+  >
+    {{ overlayInput.title }}
+  </div>
+  <div
+    class="text-base flex flex-row justify-between gap-4 max-w-screen-xl w-full lg:mx-auto px-8"
+  >
+    <h2 [id]="overlayInput.title">{{ overlayInput.position }}</h2>
     <h2>{{ overlayInput.startDate }} - {{ overlayInput.endDate }}</h2>
   </div>
-
-  @for (cardInput of overlayInput.cardInputs; track cardInput.heading) {
-  <app-card [cardInput]="cardInput"></app-card>
-  }
+  <div class="w-full bg-[#d6e4ff] justify-center">
+    <div
+      class="flex flex-wrap justify-evenly lg:justify-between lg:mx-auto gap-4 max-w-screen-xl px-8 my-8"
+    >
+      @for (cardInput of overlayInput.cardInputs; track cardInput.heading) {
+      <app-card [cardInput]="cardInput"></app-card>
+      }
+    </div>
+  </div>
 </div>

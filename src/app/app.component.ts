@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { OverlayComponent, OverlayInput } from './overlay/overlay.component';
 import { CardInput } from './overlay/card/card.component';
+import { StickyBarComponent } from './sticky-bar/sticky-bar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, OverlayComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
+  imports: [RouterOutlet, OverlayComponent, StickyBarComponent],
 })
 export class AppComponent {
   title = 'ryo-kam';
@@ -84,4 +85,8 @@ export class AppComponent {
       cardInputs: this.ehqCards,
     },
   ];
+
+  get overlayIds() {
+    return this.overlayInputs.map((overlayInput) => overlayInput.title);
+  }
 }
