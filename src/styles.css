@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --text: #0a0802;
+    --background: #f0ead6;
+    --primary: #cfac34;
+    --secondary: #a0e797;
+    --accent: #65db89;
+  }
+  .dark {
+    --text: #fdfcf6;
+    --background: #29230f;
+    --primary: #caa62f;
+    --secondary: #216718;
+    --accent: #249947;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

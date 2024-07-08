@@ -1,10 +1,15 @@
-<app-sticky-bar [stickyBarInput]="overlayIds"></app-sticky-bar>
-<div class="pt-14">
-  <app-parallax-background>
-    <app-landing></app-landing>
-
-    @for (overlayInput of overlayInputs; track $index) {
-    <app-overlay [overlayInput]="overlayInput"></app-overlay>
-    }
-  </app-parallax-background>
+<div [class.dark]="darkMode" class="text-text bg-background">
+  <app-sticky-bar
+    [stickyBarInput]="stickyBarInput"
+    [(darkMode)]="darkMode"
+  ></app-sticky-bar>
+  <div class="pt-14">
+    <app-parallax-background>
+      <app-landing></app-landing>
+      <h1></h1>
+      @for (overlayInput of overlayInputs; track $index) {
+      <app-overlay [overlayInput]="overlayInput"></app-overlay>
+      }
+    </app-parallax-background>
+  </div>
 </div>

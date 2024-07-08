@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { OverlayComponent, OverlayInput } from './overlay/overlay.component';
 import { CardInput } from './overlay/card/card.component';
 import { StickyBarComponent } from './sticky-bar/sticky-bar.component';
 import { ParallaxBackgroundComponent } from './parallax-background/parallax-background.component';
 import { LandingComponent } from './landing/landing.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -17,9 +18,12 @@ import { LandingComponent } from './landing/landing.component';
     StickyBarComponent,
     ParallaxBackgroundComponent,
     LandingComponent,
+    CommonModule,
   ],
 })
 export class AppComponent {
+  darkMode = false;
+
   title = 'ryo-kam';
   thredInternCards: Array<CardInput> = [
     {
@@ -94,7 +98,7 @@ export class AppComponent {
     },
   ];
 
-  get overlayIds() {
+  get stickyBarInput() {
     return this.overlayInputs.map((overlayInput) => overlayInput.title);
   }
 }

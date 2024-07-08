@@ -1,11 +1,22 @@
-<div class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-  <div class="flex flex-row justify-between gap-2 w-2/3 lg:mx-auto px-2">
+<div class="fixed top-0 left-0 w-full bg-background shadow-md z-50">
+  <div
+    class="flex flex-row align-middle justify-between gap-2 md:w-2/3 mx-auto px-4"
+  >
+    <button (click)="scrollToTop()">
+      <p class="max-md:hidden">Back to top</p>
+      <img class="md:hidden" src="/assets/chevrons-up.svg" alt="" />
+    </button>
     <div>
       @for (target of stickyBarInput; track target) {
       <button class="p-4" (click)="scrollTo(target)">{{ target }}</button>
       }
     </div>
     <div class="flex-grow-1"></div>
-    <button class="p-4" (click)="scrollToTop()">Back to top</button>
+    <button (click)="onToggleChange()" color="primary">
+      <div class="flex flex-row justify-evenly align-middle gap-2">
+        <p class="max-md:hidden">{{ darkMode ? "Dark Mode" : "Light Mode" }}</p>
+        <img [src]="darkMode ? '/assets/moon.svg' : '/assets/sun.svg'" alt="" />
+      </div>
+    </button>
   </div>
 </div>
