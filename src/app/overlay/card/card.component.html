@@ -10,4 +10,11 @@
   <p class="text-gray-600 text-base p-4 flex-grow">
     {{ cardInput.description }}
   </p>
+  @if (cardInput.footer){
+  <div class="border-t h-16">
+    <p class="text-gray-500 text-sm p-4">
+      {{ cardInput.footer }}
+    </p>
+  </div>
+  }
 </div>

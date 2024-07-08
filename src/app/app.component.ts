@@ -3,13 +3,21 @@ import { RouterOutlet } from '@angular/router';
 import { OverlayComponent, OverlayInput } from './overlay/overlay.component';
 import { CardInput } from './overlay/card/card.component';
 import { StickyBarComponent } from './sticky-bar/sticky-bar.component';
+import { ParallaxBackgroundComponent } from './parallax-background/parallax-background.component';
+import { LandingComponent } from './landing/landing.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [RouterOutlet, OverlayComponent, StickyBarComponent],
+  imports: [
+    RouterOutlet,
+    OverlayComponent,
+    StickyBarComponent,
+    ParallaxBackgroundComponent,
+    LandingComponent,
+  ],
 })
 export class AppComponent {
   title = 'ryo-kam';

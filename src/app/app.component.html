@@ -1,8 +1,10 @@
 <app-sticky-bar [stickyBarInput]="overlayIds"></app-sticky-bar>
-<div class="pt-16">
-  <h1 class="text-3xl font-bold underline">Hello world!</h1>
+<div class="pt-14">
+  <app-parallax-background>
+    <app-landing></app-landing>
 
-  @for (overlayInput of overlayInputs; track $index) {
-  <app-overlay [overlayInput]="overlayInput"></app-overlay>
-  }
+    @for (overlayInput of overlayInputs; track $index) {
+    <app-overlay [overlayInput]="overlayInput"></app-overlay>
+    }
+  </app-parallax-background>
 </div>
