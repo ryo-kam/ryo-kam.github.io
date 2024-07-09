@@ -6,6 +6,7 @@
       <p class="max-md:hidden">Back to top</p>
       <img class="md:hidden" src="/assets/chevrons-up.svg" alt="" />
     </button>
+    <div class="flex-grow-1"></div>
     <div>
       @for (target of stickyBarInput; track target) {
       <button class="p-4" (click)="scrollTo(target)">{{ target }}</button>

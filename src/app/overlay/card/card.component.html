@@ -1,18 +1,24 @@
 <div
-  class="flex flex-col justify-between gap-1 h-full bg-white shadow-lg rounded-lg flex-1 overflow-hidden max-w-96 h-160 hover:shadow-xl transition-shadow duration-300 ease-in-out"
+  class="flex flex-col justify-between gap-2 bg-secondary shadow-lg rounded-lg overflow-hidden h-full"
 >
-  <div class="flex flex-row gap-4 items-center justify-between p-4">
-    <h1 class="text-xl font-semibold text-gray-800">{{ cardInput.heading }}</h1>
+  <div class="flex flex-row gap-4 items-center justify-between px-8 pt-10">
+    <h1 class="text-xl font-semibold">
+      {{ cardInput.heading }}
+    </h1>
     @if (cardInput.icon){
     <img [src]="cardInput.icon" class="w-10 h-10" />
     }
   </div>
-  <p class="text-gray-600 text-base p-4 flex-grow">
-    {{ cardInput.description }}
-  </p>
+  <div class="flex flex-col gap-3 flex-grow mt-2">
+    @for (desc of cardInput.description; track $index) {
+    <p class="text-base px-8">
+      {{ desc }}
+    </p>
+    }
+  </div>
   @if (cardInput.footer){
-  <div class="border-t h-16">
-    <p class="text-gray-500 text-sm p-4">
+  <div class="border-t min-h-18">
+    <p class="text-sm p-4">
       {{ cardInput.footer }}
     </p>
   </div>

@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 
 export type CardInput = {
   heading: string;
-  description: string;
+  description: Array<string>;
   icon?: string;
   footer?: string;
 };

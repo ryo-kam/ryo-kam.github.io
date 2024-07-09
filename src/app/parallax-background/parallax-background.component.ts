@@ -49,7 +49,7 @@ export class ParallaxBackgroundComponent {
 
       polygon.setAttribute('points', points);
       polygon.setAttribute('fill', 'none');
-      polygon.setAttribute('stroke', '#00AFB9');
+      polygon.setAttribute('stroke', '#E2D7B1');
       polygon.setAttribute('stroke-width', '0.3');
       polygon.setAttribute('stroke-linejoin', 'round');
       polygon.setAttribute('stroke-linecap', 'round');

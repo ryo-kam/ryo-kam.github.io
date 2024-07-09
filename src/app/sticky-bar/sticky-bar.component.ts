@@ -14,7 +14,7 @@ export class StickyBarComponent {
   @Output() darkModeChange: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   constructor(private scroller: ViewportScroller) {
-    scroller.setOffset([0, 100]);
+    scroller.setOffset([0, 80]);
   }
 
   scrollTo(targetId: string) {

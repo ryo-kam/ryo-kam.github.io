@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "selector",
   content: ["./src/**/*.{html,ts}"],
   theme: {
     extend: {
@@ -9,6 +10,7 @@ module.exports = {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         accent: "var(--accent)",
+        backgroundLighter: "var(--backgroundLighter)",
       },
     },
     screens: {
