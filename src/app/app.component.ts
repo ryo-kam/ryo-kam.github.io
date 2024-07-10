@@ -22,8 +22,6 @@ import { CommonModule } from '@angular/common';
   ],
 })
 export class AppComponent {
-  darkMode = false;
-
   title = 'ryo-kam';
   thredInternCards: Array<CardInput> = [
     {
@@ -153,12 +151,14 @@ export class AppComponent {
       image: '/assets/hydroponics.jpg',
     },
     {
-      title: '3D Printed RC Plane (WIP)',
+      title: 'Resume website',
       descriptions: [
-        'Working on a 3D printed RC plane model from scratch, improving on previous iterations to make it easier to print and assemble.',
-        'Using a special design technique to reduce infill on the parts and thus reduce weight and print time.',
+        'Built with Angular and Tailwind CSS, using GitHub Pages to host the static website.',
+        'Responsive and dark mode friendly.',
+        'Programmatically generated Pensrose tiling background.',
+        'https://github.com/ryo-kam/ryo-kam.github.io',
       ],
-      image: '/assets/plane.png',
+      image: '/assets/penrose.png',
     },
   ];
 

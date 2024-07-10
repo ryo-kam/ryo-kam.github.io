@@ -27,7 +27,7 @@ export class ParallaxBackgroundComponent {
   ngOnInit(): void {}
 
   ngAfterViewInit(): void {
-    this.generatePenroseTiling(5);
+    this.generatePenroseTiling(6);
   }
 
   generatePenroseTiling(iterations: number) {
@@ -48,7 +48,13 @@ export class ParallaxBackgroundComponent {
       );
 
       polygon.setAttribute('points', points);
-      polygon.setAttribute('fill', 'none');
+
+      if (tile.type === 0) {
+        polygon.setAttribute('fill', '#bca051');
+      } else {
+        polygon.setAttribute('fill', '#a2d898');
+      }
+      // polygon.setAttribute('fill', 'none');
       polygon.setAttribute('stroke', '#E2D7B1');
       polygon.setAttribute('stroke-width', '0.3');
       polygon.setAttribute('stroke-linejoin', 'round');

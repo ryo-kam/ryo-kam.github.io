@@ -10,13 +10,6 @@
     --secondary: #a2d898;
     --accent: #6dc789;
   }
-  .dark {
-    --text: #f8f6ed;
-    --background: #070705;
-    --primary: #ad9043;
-    --secondary: #316827;
-    --accent: #389455;
-  }
 }
 
 html {
