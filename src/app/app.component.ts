@@ -153,8 +153,7 @@ export class AppComponent {
     {
       title: 'Resume website',
       descriptions: [
-        'Built with Angular and Tailwind CSS, using GitHub Pages to host the static website.',
-        'Responsive and dark mode friendly.',
+        'Built a responsive static website with Angular and Tailwind CSS, using GitHub Pages to host.',
         'Programmatically generated Pensrose tiling background.',
         'https://github.com/ryo-kam/ryo-kam.github.io',
       ],
