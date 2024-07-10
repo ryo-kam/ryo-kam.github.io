@@ -1,12 +1,16 @@
 <div class="flex flex-col gap-2">
-  <div class="md:w-2/3 w-full bg-background mx-auto shadow-2xl md:rounded-lg">
+  <div
+    class="md:w-2/3 w-full bg-background mx-auto md:shadow-2xl md:rounded-lg"
+  >
     <div class="flex md:flex-row flex-col justify-center w-full">
       <div
         class="flex flex-col justify-center gap-2 mx-auto py-8"
         [ngClass]="overlayInput.image ? 'md:w-2/5 w-4/5' : 'w-4/5'"
       >
-        <h1 class="text-3xl font-bold">{{ overlayInput.title }}</h1>
-        <div>
+        <h1 class="text-3xl font-bold text-primary">
+          {{ overlayInput.title }}
+        </h1>
+        <div class="text-accent font-medium">
           @if (overlayInput.position) {
           <h2>{{ overlayInput.position }}</h2>
           } @if ( overlayInput.startDate && overlayInput.endDate) {
