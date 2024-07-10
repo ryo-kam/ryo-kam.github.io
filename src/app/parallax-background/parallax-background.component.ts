@@ -50,12 +50,12 @@ export class ParallaxBackgroundComponent {
       polygon.setAttribute('points', points);
 
       if (tile.type === 0) {
-        polygon.setAttribute('fill', '#bca051');
+        polygon.setAttribute('fill', '#99ceba');
       } else {
-        polygon.setAttribute('fill', '#a2d898');
+        polygon.setAttribute('fill', '#b39d61');
       }
       // polygon.setAttribute('fill', 'none');
-      polygon.setAttribute('stroke', '#E2D7B1');
+      polygon.setAttribute('stroke', '#f0ead6');
       polygon.setAttribute('stroke-width', '0.3');
       polygon.setAttribute('stroke-linejoin', 'round');
       polygon.setAttribute('stroke-linecap', 'round');

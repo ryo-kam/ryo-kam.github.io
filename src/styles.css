@@ -4,12 +4,19 @@
 
 @layer base {
   :root {
+    --text: #0e0c07;
+    --background: #f0ead6;
+    --primary: #b39d61;
+    --secondary: #99ceba;
+    --accent: #82adc3;
+  }
+  /* :root {
     --text: #141208;
     --background: #f0ead6;
     --primary: #bca051;
     --secondary: #a2d898;
     --accent: #6dc789;
-  }
+  } */
 }
 
 html {
