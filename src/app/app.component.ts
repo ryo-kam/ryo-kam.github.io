@@ -27,7 +27,6 @@ export class AppComponent {
     {
       heading: 'Full-Stack Development',
       description: [
-        'Went from no prior experience in full-stack + cloud infrastructure development to handling Trello tickets independently over the course of the internship.',
         'Contributed to projects on our monorepo, such as a cloud-based ERP replacement for SAP and our SaaS product.',
       ],
       footer:
@@ -107,6 +106,7 @@ export class AppComponent {
       descriptions: [
         'Worked on both client-based and internal projects, autonomously developing features through Trello board tickets and quickly picking up any new skills and technologies needed on the job.',
         'Adapted to an AGILE work environment with daily stand-ups and open office space. Trello boards to keep track of feature tickets for each project.',
+        'Went from no prior experience in full-stack + cloud infrastructure development to handling Trello tickets independently over the course of the internship.',
       ],
     },
     {
