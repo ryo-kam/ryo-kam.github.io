@@ -28,6 +28,7 @@ export class AppComponent {
       heading: 'Full-Stack Development',
       description: [
         'Contributed to projects on our monorepo, such as a cloud-based ERP replacement for SAP and our SaaS product.',
+        'Developed features from the front-end to the back-end, including APIs, database models, and user interfaces.',
       ],
       footer:
         'Technologies: Angular, NestJs, PostgreSQL, Prisma ORM, Nx, Cloud Run, Firebase',
