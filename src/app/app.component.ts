@@ -77,18 +77,22 @@ export class AppComponent {
   ];
   ehqCards: Array<CardInput> = [
     {
-      heading: 'Restoring Another Branch',
+      heading: 'New Room Proof of Concept',
       description: [
-        'Managed the restoration of the puzzles at the Hamilton branch after the previous technician left the branch in disrepair.',
-        'This involved taking extended trips down to Hamilton to fix entire rooms and setting up the necessary infrastructure for the game masters to run the puzzles smoothly.',
-        'Other peripheral tasks included teaching the game master how to deal with problems encountered during the game.',
+        'Designed and built working proof of concept from owner’s specifications, from initial research and component procurement to programming, wiring, and testing.',
+      ],
+    },
+    {
+      heading: 'Major Branch Restoration Project',
+      description: [
+        'Led the restoration of a different branch in disrepair and recreated/adapted room setups, as well as updating documentation and instructing new room operators on basic troubleshooting protocols.',
       ],
     },
     {
       heading: 'Moving A Room',
       description: [
         'Completed the process of moving one of the rooms from Hamilton up to the Auckland branch over the course of a few months.',
-        "Set up multiple Raspberry Pi's and ESP32s with code that I re-wrote from Hamilton to integrate with a central switch board to control all the puzzles.",
+        "Set up the room in the Auckland branch and adapted the designs to be better suited to the branch's infrastructure.",
       ],
     },
   ];
@@ -98,37 +102,22 @@ export class AppComponent {
       title: 'Thred',
       startDate: 'Nov 2023',
       endDate: 'Jul 2024',
-      position: 'Intern (3 months) -> Junior Engineer',
+      position: 'Intern (3 months) -> Software & Data Engineer',
       cardInputs: this.thredInternCards,
       descriptions: [
-        'Worked autonomously through Trello board tickets, quickly picking up any new technologies needed on the job.',
+        'Worked on both client-based and internal projects, autonomously developing features through Trello board tickets and quickly picking up any new skills and technologies needed on the job.',
         'Adapted to an AGILE work environment with daily stand-ups and open office space. Trello boards to keep track of feature tickets for each project.',
-        'Below are highlights on the contributions I made to the projects that I worked on at Thred.',
       ],
     },
     {
       title: 'EscapeHQ',
       startDate: 'Feb 2023',
       endDate: 'Apr 2024',
-      position: 'Puzzle Technician (Contractor)',
+      position: 'Game Operations Engineer',
       cardInputs: this.ehqCards,
       descriptions: [
-        'As the sole technician, I managed to adapt and learn the puzzles mostly by myself and fixed the puzzles independently.',
-        'The contracting nature of the job, with the fact that I was in university, working another job, or both over the contract meant that I had to manage, find, and invoice hours and parts for the fix to the owner.',
-        'Physical technologies: soldering, electronics wiring, power tools.',
-        'Software technologies: Python, C, Arduino, Raspberry Pi, ESP32, Linux, SSH, Houdini MC, ',
-        'Below are highlights on the lasting contributions I made at EscapeHQ',
-      ],
-    },
-    {
-      title: 'Daruma Sushi',
-      startDate: 'Sep 2021',
-      endDate: 'Nov 2023',
-      position: 'Waiter',
-      descriptions: [
-        'Worked as a waiter at a higher-end restaurant, occasionally helping out in the kitchen when there was free time at the FoH.',
-        'Learned to conduct myself in a professional manner with a customer demographic who expects excellent service.',
-        'Taught a few new hires the ropes of the job and some etiquette in dealing with customers.',
+        'As the sole engineer in the company, developed, documented, and maintained the game infrastructure and electronics at the branch, and later took on the same responsibilities for another branch.',
+        'The contracting nature of the job meant that I was responsible for every aspect of the work from managing, finding, and invoicing hours to procuring tools and parts.',
       ],
     },
   ];
@@ -153,9 +142,8 @@ export class AppComponent {
     {
       title: 'Resume website',
       descriptions: [
-        'Built a responsive static website with Angular and Tailwind CSS, using GitHub Pages to host.',
+        'Built a responsive static webpage with Angular and Tailwind CSS, using GitHub Pages to host.',
         'Programmatically generated Pensrose tiling background.',
-        'https://github.com/ryo-kam/ryo-kam.github.io',
       ],
       image: '/assets/penrose.png',
     },
